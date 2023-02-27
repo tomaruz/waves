@@ -1,4 +1,5 @@
 
+
 // VARIABLES
 
 let x = 0;
@@ -80,10 +81,22 @@ function draw() {
     theta = offset;
 }
 
+
+
+// function mouseClicked(){
+//     var popup = document.getElementById("instruction-popup");
+//     popup.hide()
+//     console.log(mouseX)
+// }
+
+$(document). click(function (event) { $('#instruction-popup:visible'). hide(); });
+
 function mousePressed() {
+    
     if (backgroundColor == black){
         backgroundColor = white
         circleColor = black
+       
     }
     else{
         backgroundColor = black
@@ -91,4 +104,8 @@ function mousePressed() {
     }
 
 }
+
+
+
+
 
